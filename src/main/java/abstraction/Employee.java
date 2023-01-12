@@ -9,10 +9,10 @@ public class Employee extends Person{
     }
 
     @Override
-    public void office() {
+    public String office() {
         if (employeeId == 0) {
-            System.out.println("Employee logged out.");
+            return "Employee logged out.";
         }
-        System.out.println("Employee logged in.");
+        return "Employee logged in.";
     }
 }

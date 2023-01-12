@@ -10,12 +10,16 @@ public class EmployeeTest {
     @Test
     public void validateId() {
         Person employee = new Employee(109485, "Shae", "Zotowski", 25);
-        employee.office();
+
+        String actualEmployeeLog = employee.office();
+        String expectedEmployeeLog = "Employee logged in.";
+        assertEquals(actualEmployeeLog, expectedEmployeeLog);
+
         employee.changeName("Lana");
-        employee.changeLastname("Blatcnic");
+        employee.changeLastname("Blatchnic");
         employee.changeAge(45);
         String actual = employee.toString();
-        String expected = "Person{name='Lana , lastname='Blatcnic , age=45}";
+        String expected = "Person{name='Lana , lastname='Blatchnic , age=45}";
         assertEquals(actual, expected);
     }
 }

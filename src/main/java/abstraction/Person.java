@@ -10,7 +10,7 @@ public abstract class Person {
         this.lastname = lastname;
         this.age = age;
     }
-    public abstract void office();
+    public abstract String office();
 
     @Override
     public String toString() {
